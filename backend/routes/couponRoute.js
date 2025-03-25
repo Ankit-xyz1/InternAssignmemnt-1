@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { checkToken } from "../middleware/checktoken.js";
-import { claimCoupon, createCoupon, fetchAllCoupon, fetchUnclaimedCoupon } from "../controller/couponControler.js";
+import { claimCoupon, createCoupon, fetchAllCoupon, fetchUnclaimedCoupon, toggleCouponStatus } from "../controller/couponControler.js";
 import { adminVerify } from "../middleware/adminAuth.js";
 
 const couponRoute = Router();

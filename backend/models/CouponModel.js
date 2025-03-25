@@ -7,7 +7,7 @@ const couponSchema = new mongoose.Schema({
   isClaimed: { type: Boolean, default: false },
   claimedBy: {
     type: String,
-    default: null,
+    default: "",
   },
   createdAt: { type: Date, default: Date.now },
 });

@@ -6,7 +6,7 @@ export const adminVerify = async (req, res, next) => {
   const SECRET_KEY = process.env.JWT_SECRET || "xxxxxxx";
   try {
     // Get the token from cookies
-    const Admintoken = req.cookies.token;
+    const Admintoken = req.cookies.Admintoken;
     if (!Admintoken) {
       return res
         .status(401)

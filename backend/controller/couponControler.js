@@ -31,7 +31,7 @@ export const claimCoupon = async (req, res) => {
 
     res
       .status(200)
-      .json({ sucess: true, message: "Coupon claimed successfully", coupon });
+      .json({ sucess: true, message: "Coupon claimed successfully" });
   } catch (error) {
     console.error(error);
     res.status(500).json({ sucess: false, message: "Internal server error" });
